@@ -1,0 +1,28 @@
+table,column,,,,,,,,,,,
+movie,id,,,,,,,,genre,,,ratings
+movie,title,,,,,,,,* movie_id,,,* movie_id
+movie,year,,,,,,,,* genre,,,avg_rating
+movie,date_published,,,,,,,,,,,total_votes
+movie,duration,,,,,,,,,,,median_rating
+movie,country,,,,,,,,,,,
+movie,worlwide_gross_income,,,,,,,,,,,
+movie,languages,,,,,,,,movie,,,
+movie,production_company,,,,,,,,* id,,,
+genre,movie_id,,,,,,,,title,,,
+genre,genre,,,,,,,,year,,,
+director_mapping,movie_id,,,,,,,,date_published,,,
+director_mapping,name_id,,,,,role_mapping,,,duration,,,director_mapping
+role_mapping,movie_id,,,,,* movie_id,,,country,,,* movie_id
+role_mapping,name_id,,,,,* name_id,,,worlwide_gross_income,,,* name_id
+role_mapping,category,,,,,category,,,languages,,,
+names,id,,,,,,,,production_company,,,
+names,name,,,,,,,,,,,
+names,height,,,,,,,,names,,,
+names,date_of_birth,,,,,,,,* id,,,
+names,known_for_movies,,,,,,,,name,,,
+ratings,movie_id,,,,,,,,height,,,
+ratings,avg_rating,,,,,,,,date_of_birth,,,
+ratings,total_votes,,,,,,,,known_for_movies,,,
+ratings,median_rating,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
